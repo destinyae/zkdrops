@@ -11,7 +11,7 @@ The smart contract for distributions (`zkdrops-contracts/contracts/PrivateAirdro
 - Users create a `key` and a `secret`, and concatenate `hash(key + secret)` to create the `commitment`.
 - The `commitment` can then be transmitted across a public or private channel without leaking information.
 - An admin assembles a Merkle tree of these `commitments` and deploys the smart contracts.
-- Users can then redeem with a zero-knoweldge proof that they belong in the Merkle tree without revealing which `commitment` is associated with their public key.
+- Users can then redeem with a zero-knowledge proof that they belong in the Merkle tree without revealing which `commitment` is associated with their public key.
 - Note that on-chain verification requires ~350k gas.
 
 ![zk proof diagram](https://github.com/a16z/zkdrops/blob/main/imgs/merkle_proof.jpg?raw=true)
